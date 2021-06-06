@@ -120,6 +120,11 @@ discord-addons@^1.0.8:
   dependencies:
     discord.js latest
 
+discord-snakegame@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/discord-snakegame/-/discord-snakegame-2.0.0.tgz#0ea8cc516c3fe2ad5da0d4e75fde07a02cfc3cc9"
+  integrity sha512-UETYGZ47CwU1TNHHGImAxu8ODx2yvZ5w4U3zN82mmsbNhuN8GGPyFgytG5LDxqFdBpJiJZZhd5Y0SSGYhSQcvw==
+
 discord.js@^12.5.3, discord.js@latest:
   version "12.5.3"
   resolved "https://registry.yarnpkg.com/discord.js/-/discord.js-12.5.3.tgz#56820d473c24320871df9ea0bbc6b462f21cf85c"
