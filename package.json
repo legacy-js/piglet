@@ -7,7 +7,7 @@
     "fs": "^0.0.1-security"
   },
   "name": "pig.let",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "🐷 Discord bot that likes to play!",
   "main": "index.js",
   "repository": "https://github.com/zenepity/piglet",
