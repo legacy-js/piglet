@@ -14,34 +14,31 @@ const client = new Discord.Client({
     },
 });
 client.commands = new Discord.Collection();
-const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
+client.aliases = new Discord.Collection();
 new Events(client);
 
 // main
-for (const file of commandFiles) {
-    const command = require(`./commands/${file}`);
-    client.commands.set(command.name, command);
-}
-
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('message', message => {
-    if (!message.content.startsWith(process.env.PREFIX) || message.author.bot) return;
 
-    const args = message.content.slice(process.env.PREFIX.length).trim().split(/ +/);
-    const command = args.shift().toLowerCase();
+["command"].forEach(handler => {
+    require(`./handlers/${handler}`)(client);
+});
 
-
-    if (!client.commands.has(command)) return;
-
-    try {
-        client.commands.get(command).execute(message, args);
-    } catch (error) {
-        console.error(error);
-        message.reply('there was an error trying to execute that command!');
-    }
+client.on('message', async(message) => {
+    if (message.author.bot) return;
+    if (!message.guild) return;
+    if (!message.content.startsWith(process.env.PREFIX)) return;
+    if (!message.member) message.member = await message.guild.fetchMember(message);
+    const args = message.content.slice(process.env.PREFIX.length).trim().split(/ +/g);
+    const cmd = args.shift().toLowerCase();
+    if (cmd.length === 0) return;
+    let command = client.commands.get(cmd);
+    if (!command) command = client.commands.get(client.aliases.get(cmd));
+    if (command)
+        command.run(client, message, args);
 });
 
 client.login(process.env.TOKEN);
