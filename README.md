@@ -18,6 +18,9 @@ src="https://img.shields.io/github/package-json/v/zenepity/piglet?color=f4adbb&l
 <img
 alt="Github license"
 src="https://img.shields.io/github/license/zenepity/piglet?color=f4adbb&logo=github&logoColor=f4adbb&style=for-the-badge">
+<img
+alt="Code Style"
+src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=for-the-badge">
 </div>
 <div align="center">
 <img
