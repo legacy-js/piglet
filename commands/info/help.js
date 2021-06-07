@@ -8,7 +8,7 @@ module.exports = {
             "color": 15423854,
             "fields": [{
                     "name": "Commands",
-                    "value": "Prefix: `#`\n```\nInfo — help, ping\nGames —  rockpaperscissors\n```"
+                    "value": "Prefix: `#`\n```\nInfo — help, ping\nFun — kanye\nGames —  rockpaperscissors\n```"
                 },
                 {
                     "name": "Links",
