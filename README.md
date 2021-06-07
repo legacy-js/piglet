@@ -58,6 +58,12 @@ width="22%">
 - 📖 Entirely open-sourced
 - 🤝 User friendly
 
+<h2>Commands</h2>
+
+- 💁**Info**: `help`, `ping`
+- 🤾 **Fun**: `kanye`
+- 🕹️ **Games**: `rockpaperscissors`
+
 <h2>⚖️ License</h2>
 
 **Piglet** uses the Mozilla Public License 2.0.
