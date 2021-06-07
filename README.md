@@ -46,3 +46,21 @@ width="22%">
 </p>
 </div>
 <h1></h1>
+
+> ⚠️ **NOTICE**:
+>  This repository contains no guides on how to create your bot or how to download the code. Although I do have a blog post that guides you on how to create a discord application.
+>  https://sites.google.com/view/zenepity/create-your-own-discord-bot-in-discord-js
+
+<h2>🌟 Features</h2>
+
+- 📽️Ad Free
+- 🔑 No api keys needed
+- 📖 Entirely open-sourced
+- 🤝 User friendly
+
+<h2>⚖️ License</h2>
+
+**Piglet** uses the Mozilla Public License 2.0.
+
+Permissions of this weak copyleft license are conditioned on making available source code of licensed files and modifications of those files under the same license (or in certain cases, one of the GNU 
+licenses). Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work may be distributed under different terms and without source code for files added in the larger work.
